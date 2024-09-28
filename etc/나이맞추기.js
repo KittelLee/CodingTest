@@ -7,4 +7,9 @@ const year_of_age = date.getFullYear();
 const result = year_of_age + 1 - year;
 console.log(result);
 
-// 리팩토링 필요
+// 리팩토링
+const date_2 = new Date();
+const currentYear = date.getFullYear();
+const birthYear = prompt("출생년도를 입력하세요");
+const age = currentYear - birthYear + 1;
+console.log(`당신의 나이는 ${age}살입니다.`);
